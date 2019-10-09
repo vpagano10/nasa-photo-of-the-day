@@ -36,6 +36,10 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-title {
   color: dodgerblue;
   font-size: 2rem;
