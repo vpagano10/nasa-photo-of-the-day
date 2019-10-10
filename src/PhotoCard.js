@@ -59,7 +59,7 @@ const PhotoCard = props => {
         <>
             <CardDisplay key={props.id}>
                 <ImgTitle>{`${props.title}`}</ImgTitle>
-                <ImgDate><DateButton>Date</DateButton>{`: ${props.date}`}</ImgDate>
+                <ImgDate><DateButton>Date{`: ${props.date}`}</DateButton></ImgDate>
                 <Pic alt='nasa pic of the day' src={`${props.pic}`} />
                 <WhatsThis><ExplanationButton>What do we see here?</ExplanationButton></WhatsThis>
                 <Explanation>{`${props.explanation}`}</Explanation>

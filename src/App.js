@@ -9,7 +9,7 @@ export const rotate = keyframes`
   to {transform: rotate(360deg);}
 `;
 export const Rocket = styled.div`
-  margin: 2%;
+  margin: 4%;
   animation: ${rotate} 10s linear infinite;
 `;
 
@@ -19,8 +19,9 @@ export const Rocket = styled.div`
 //   100% {border-radius: 5px;}
 // `;
 export const Star = styled.div`
-  animation: ${rotate} 5s linear infinite;
-  margin: 2%;
+  border-radius: 50%;
+  animation: ${rotate} 10s linear infinite;
+  margin: 4%;
 `;
 
 export const move = keyframes`
@@ -32,9 +33,8 @@ export const move = keyframes`
 `;
 export const Launch = styled.div`
   animation: ${move} 5s linear infinite;
-`
+`;
 
-// ⭐
 
 function App() {
   return (
