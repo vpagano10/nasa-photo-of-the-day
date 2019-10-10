@@ -39,19 +39,19 @@ const DateButton = styled.button`
     margin: 0% .5% 0% 0%;
     background-color: transparent;
     color: dodgerblue;
-    &:hover {
-        background-color: dodgerblue;
-        color: rgb(7, 30, 56);
-    }
+    // &:hover {
+    //     background-color: dodgerblue;
+    //     color: rgb(7, 30, 56);
+    // }
 `;
 const ExplanationButton = styled(DateButton)`
     padding: 1%;
     border: 4px solid rgb(30, 255, 218, 0.61);
     color: rgb(30, 255, 218);
-    &:hover {
-        background-color: rgb(30, 255, 218, 0.75);
-        color: black;
-    }
+    // &:hover {
+    //     background-color: rgb(30, 255, 218, 0.75);
+    //     color: black;
+    // }
 `;
 
 const PhotoCard = props => {
@@ -64,7 +64,6 @@ const PhotoCard = props => {
                 <WhatsThis><ExplanationButton>What do we see here?</ExplanationButton></WhatsThis>
                 <Explanation>{`${props.explanation}`}</Explanation>
             </CardDisplay>
-            <Star>⭐</Star>
         </>
     );
 };

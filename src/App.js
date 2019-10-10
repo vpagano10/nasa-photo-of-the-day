@@ -9,6 +9,7 @@ export const rotate = keyframes`
   to {transform: rotate(360deg);}
 `;
 export const Rocket = styled.div`
+  border-radius: 50%;
   margin: 4%;
   animation: ${rotate} 10s linear infinite;
 `;
@@ -34,13 +35,13 @@ export const move = keyframes`
 export const Launch = styled.div`
   animation: ${move} 5s linear infinite;
 `;
-
+// 🚀
 
 function App() {
   return (
     <div className="App">
       <p className='page-title'>
-        Astronomy Picture of the Day!<a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html"><Rocket>🚀</Rocket></a>
+        Astronomy Picture of the Day!<a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html"><Rocket>🌎</Rocket></a>
       </p>
       <div className='photo-container'>
         <PhotoList />
