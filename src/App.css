@@ -33,7 +33,8 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(./img/Stars3.jpg);
 }
 
 a {
@@ -45,7 +46,26 @@ a {
   font-size: 2rem;
 }
 
-.photo-list {
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes morph {
+  0% {border-radius: 5px;}
+  50% {border-radius: 5px;}
+  100% {border-radius: 5px;}
+}
+@keyframes move {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+
+/* .photo-list {
   margin: 2%;
 }
 
@@ -105,4 +125,4 @@ a {
 
 .img-otd {
   max-width: 100%;
-}
+} */
